@@ -51,6 +51,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng heckyl = new LatLng(19.1112753, 72.9082736);
         mMap.addMarker(new MarkerOptions().position(heckyl).title("Heckyl Tech."));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(heckyl));
+
+        getSearchLocations gs = new getSearchLocations();
+        gs.execute();
     }
 
     class getSearchLocations extends AsyncTask<Void, Void, String> {
