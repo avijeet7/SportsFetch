@@ -86,7 +86,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
 
                 data = sb.toString();
-//                Log.d("downloadUrl", data.toString());
+                Log.d("downloadUrl", data.toString());
                 br.close();
 
             } catch (Exception e) {
@@ -104,7 +104,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         @Override
         protected void onPostExecute(String response) {
-//            Log.d("ASD", response.toString());
+            Log.d("ASD", response.toString());
         }
     }
 }
